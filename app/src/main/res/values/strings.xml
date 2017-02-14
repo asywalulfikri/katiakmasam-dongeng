@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Dongeng Untuk Anak</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="btn_dongeng">Dongeng</string>
+    <string name="btn_legenda">Legenda</string>
+    <string name="btn_hikayat">Hikayat</string>
+    <string name="btn_ceritarakyat">Cerita Rakyat</string>
+    <string name="btn_mitos">Cerita Lucu</string>
+    <string name="text_no_data">Upss!!. Periksa Koneksi</string>
+    <string name="text_download_failed">Upss!! gagal Periksa Koneksi Anda dan Refresh</string>
+    <string name="cerita_populer">Cerita Populer</string>
+    <string name="cerita_terbaru">Cerita Terbaru</string>
+    <string name="text_cerita_populer">Rekomendasi Cerita Populer </string>
+    <string name="text_cerita_terbaru">Rekomendasi Cerita Terbaru </string>
+    <string name="transition_photos">transition_animation_news_photos</string>
+    <string name="change_font_size">Ganti Ukuran Huruf</string>
+    <string name="save_to_bookmark">Simpan Ke Bookmark</string>
+
+    <string name="size12">12 SP</string>
+    <string name="size14">14 SP</string>
+    <string name="size16">16 SP</string>
+    <string name="size18">18 SP</string>
+    <string name="text_deleted">Bookmark di hapus</string>
+    <string name="text_save">Disimpan ke Bookmark</string>
+    <string name="text_bookmark_empty">Bookmark Masih Kosong</string>
+    <string name="text_confirm_signout" >Anda yakin akan keluar?</string>
+    <string name="text_no">Tidak</string>
+    <string name="text_yes">Ya</string>
+</resources>

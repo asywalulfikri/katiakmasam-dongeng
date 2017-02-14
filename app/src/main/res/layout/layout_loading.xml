@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+	    android:id="@+id/tv_loading"            
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"    
+	    android:layout_centerInParent="true"	                                        
+	    android:text="Loading..."/>
+        
+	<ProgressBar
+	    style="?android:attr/progressBarStyleLarge"
+	    android:id="@+id/pb_loading"                        
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_centerVertical="true"            
+	    android:layout_toLeftOf="@+id/tv_loading"/>
+        
+	<Button
+	    android:id="@+id/btn_retry"                        
+	    android:layout_below="@+id/tv_loading"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"   
+	    android:visibility="gone"         
+	    android:text="coba lagi"/>
+    
+    <ImageView
+        android:id="@+id/iv_action_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"/>
+        
+	<TextView
+	    android:id="@+id/tv_action_empty"            
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"    
+	    android:layout_centerInParent="true"
+	    android:visibility="gone"
+	    android:layout_above="@+id/iv_action_empty"
+	    android:layout_marginBottom="@dimen/activity_horizontal_margin"                                     
+	    android:text="Loading..."/>
+
+</RelativeLayout>

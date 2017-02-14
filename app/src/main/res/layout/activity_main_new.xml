@@ -1,0 +1,89 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/xx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/rl_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/cari"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/cari" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/xx" />
+    </RelativeLayout>
+
+    <com.lapism.searchview.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/text_color_white"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary" />
+</android.support.v4.widget.DrawerLayout>
